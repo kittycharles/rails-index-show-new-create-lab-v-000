@@ -12,6 +12,12 @@ def new
 end
 
 def create
+@coupon = Coupon.new
+ @coupon.first_name = params[:coupon_code]
+ @coupon.last_name = params[:store]
+ @coupon.save
+ redirect_to coupon_path(@coupon)
+end
 end
 
 end
