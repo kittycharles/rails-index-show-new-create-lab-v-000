@@ -54,6 +54,6 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   get '/index', to: 'coupons#index', as: 'coupons'
-  get '/student/:id', to: 'students#show', as: 'student'
+  get '/new', to: 'coupons#new', as: 'coupons/new'
 
 end
