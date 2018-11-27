@@ -5,7 +5,7 @@ def index
 end
 
 def show
-  @coupon = Coupon.find_by(params[:id])
+  @coupon = Coupon.find(params[:id])
 end
 
 def new
