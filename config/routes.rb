@@ -53,4 +53,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get '/index', to: 'coupons#index', as: 'coupons'
+  get '/student/:id', to: 'students#show', as: 'student'
+
 end
