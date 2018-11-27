@@ -18,6 +18,6 @@ def create
  @coupon.save
  redirect_to coupon_path(@coupon)
 end
-end
+
 
 end
